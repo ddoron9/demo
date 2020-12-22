@@ -13,6 +13,9 @@ import torch.nn as nn
 from torchvision import transforms, models
 import time
 from numpy_ringbuffer import RingBuffer
+
+print(os.path.abspath('.'))  
+
 from models.audio_emotion import *
 from models.audio_gender import *
 from utils.audio_utils import *

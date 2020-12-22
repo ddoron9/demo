@@ -68,7 +68,7 @@ def record(WAVE_OUTPUT_FILENAME,SAMPLE_RATE,sec):
     wf.close()
     return
 
-def addAWGN(signal, num_bits=16, augmented_num=2, snr_low=15, snr_high=30): 
+def addAWGN(signal, num_bits=16, augmented_num=1, snr_low=15, snr_high=30): 
     signal_len = len(signal)
     # Generate White Gaussian noise
     noise = np.random.normal(size=(augmented_num, signal_len))

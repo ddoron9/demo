@@ -1,7 +1,7 @@
 import argparse
 import os, sys
 import cv2
-from facenet_pytorch import MTCNN
+# from facenet_pytorch import MTCNN
 from utils.image_utils import *
 from utils.run_audio import *
 
@@ -16,7 +16,7 @@ parser.add_argument('--src', type=int, default=0,
 args = parser.parse_args()
 #################################################################
 
-mtcnn = MTCNN()
+# mtcnn = MTCNN()
 
 class Demo(object):
     def __init__(self, mtcnn, data):
